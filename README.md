@@ -11,8 +11,6 @@ pip install -r requirements.txt
 
 ## How to run tests?
 
-Make sure that docker container is running. Activate your virtual environment.
-
 source venv-madlib-assessment/bin/activate
 
 python test.py
@@ -22,3 +20,6 @@ python test.py
 cd madlib-assessment
 
 docker build -t madlib-assessment .
+docker run -p 5001:5000 -d madlib-assessment:latest
+
+Visit http://127.0.0.1:5001/madlib to check the API.
