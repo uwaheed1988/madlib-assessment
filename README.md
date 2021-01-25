@@ -23,3 +23,7 @@ docker build -t madlib-assessment .
 docker run -p 5000:5000 -d madlib-assessment:latest
 
 Visit http://127.0.0.1:5000/madlib to check the API.
+
+## Endnotes:
+
+- We used Flask as it was a rather simple task and didn't need to use a full stack web framework for the purpose. 
